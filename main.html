@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+		<h1 role="heading">Welcome to my Portfolio</h1>
+	</header>
+	<!---Navigation bar--->
+	<nav role="navigation">
+      		 <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+	</nav>
+
+	 <section id="about">
+        <img role="img" src="profile-picture.jpg" alt="Portrait of the portfolio owner">
+        <p>A passionate web developer creating accessible and interactive user experiences.</p>
+    </section>
+    
+    <!-- Projects List -->
+    <section id="projects">
+        <h2 role="heading">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Responsive Website Design</li>
+            <li role="listitem">Interactive Web Applications</li>
+            <li role="listitem">Accessible Form Designs</li>
+        </ul>
+    </section>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
